@@ -1,0 +1,45 @@
+{
+  "tag": "step3_contrastive_trainonly_finetune_frac0.5_seed123",
+  "checkpoint": "/content/drive/MyDrive/EllipticProject/step3_contrastive_trainonly.pt",
+  "mode": "finetune",
+  "frac": 0.5,
+  "test_35_49": {
+    "illicit_precision": 0.5187908496732027,
+    "illicit_recall": 0.5863342566943675,
+    "illicit_f1": 0.5504984828781968,
+    "micro_f1": 0.9377924415116976,
+    "auc_pr": 0.5753954700092863,
+    "n_illicit_true": 1083,
+    "n_total": 16670,
+    "tp": 635,
+    "fp": 589,
+    "fn": 448,
+    "tn": 14998
+  },
+  "test_pre_shutdown_35_42": {
+    "illicit_precision": 0.5994263862332696,
+    "illicit_recall": 0.6859956236323851,
+    "illicit_f1": 0.639795918367347,
+    "micro_f1": 0.9292797756185516,
+    "auc_pr": 0.6942349630938799,
+    "n_illicit_true": 914,
+    "n_total": 9983,
+    "tp": 627,
+    "fp": 419,
+    "fn": 287,
+    "tn": 8650
+  },
+  "test_post_shutdown_43_49": {
+    "illicit_precision": 0.0449438202247191,
+    "illicit_recall": 0.047337278106508875,
+    "illicit_f1": 0.04610951008645533,
+    "micro_f1": 0.9505009720352924,
+    "auc_pr": 0.050008001753814015,
+    "n_illicit_true": 169,
+    "n_total": 6687,
+    "tp": 8,
+    "fp": 170,
+    "fn": 161,
+    "tn": 6348
+  }
+}

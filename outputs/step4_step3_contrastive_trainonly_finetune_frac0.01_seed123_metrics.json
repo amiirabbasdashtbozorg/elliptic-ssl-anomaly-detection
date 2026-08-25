@@ -1,0 +1,47 @@
+{
+  "tag": "step3_contrastive_trainonly_finetune_frac0.01_seed123",
+  "checkpoint": "outputs/step3_contrastive_trainonly.pt",
+  "mode": "finetune",
+  "frac": 0.01,
+  "seed": 123,
+  "n_train_labeled_used": 299,
+  "test_35_49": {
+    "illicit_precision": 0.22397769516728624,
+    "illicit_recall": 0.4450600184672207,
+    "illicit_f1": 0.29799072642967545,
+    "micro_f1": 0.8637672465506898,
+    "auc_pr": 0.18139221480579257,
+    "n_illicit_true": 1083,
+    "n_total": 16670,
+    "tp": 482,
+    "fp": 1670,
+    "fn": 601,
+    "tn": 13917
+  },
+  "test_pre_shutdown_35_42": {
+    "illicit_precision": 0.29456869009584663,
+    "illicit_recall": 0.5043763676148797,
+    "illicit_f1": 0.3719241629689391,
+    "micro_f1": 0.8440348592607433,
+    "auc_pr": 0.2616047447561155,
+    "n_illicit_true": 914,
+    "n_total": 9983,
+    "tp": 461,
+    "fp": 1104,
+    "fn": 453,
+    "tn": 7965
+  },
+  "test_post_shutdown_43_49": {
+    "illicit_precision": 0.03577512776831346,
+    "illicit_recall": 0.1242603550295858,
+    "illicit_f1": 0.05555555555555555,
+    "micro_f1": 0.8932256617317182,
+    "auc_pr": 0.03275630434974782,
+    "n_illicit_true": 169,
+    "n_total": 6687,
+    "tp": 21,
+    "fp": 566,
+    "fn": 148,
+    "tn": 5952
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "tag": "scratch_finetune_frac0.5_seed123",
+  "checkpoint": null,
+  "mode": "finetune",
+  "frac": 0.5,
+  "test_35_49": {
+    "illicit_precision": 0.4389312977099237,
+    "illicit_recall": 0.6371191135734072,
+    "illicit_f1": 0.519774011299435,
+    "micro_f1": 0.9235152969406119,
+    "auc_pr": 0.5485233731734406,
+    "n_illicit_true": 1083,
+    "n_total": 16670,
+    "tp": 690,
+    "fp": 882,
+    "fn": 393,
+    "tn": 14705
+  },
+  "test_pre_shutdown_35_42": {
+    "illicit_precision": 0.517503805175038,
+    "illicit_recall": 0.7439824945295405,
+    "illicit_f1": 0.6104129263913824,
+    "micro_f1": 0.9130521887208254,
+    "auc_pr": 0.6729617608218098,
+    "n_illicit_true": 914,
+    "n_total": 9983,
+    "tp": 680,
+    "fp": 634,
+    "fn": 234,
+    "tn": 8435
+  },
+  "test_post_shutdown_43_49": {
+    "illicit_precision": 0.03875968992248062,
+    "illicit_recall": 0.05917159763313609,
+    "illicit_f1": 0.0468384074941452,
+    "micro_f1": 0.9391356363092568,
+    "auc_pr": 0.04655000235140841,
+    "n_illicit_true": 169,
+    "n_total": 6687,
+    "tp": 10,
+    "fp": 248,
+    "fn": 159,
+    "tn": 6270
+  }
+}

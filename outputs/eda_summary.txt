@@ -1,0 +1,19 @@
+Loading raw CSVs...
+  features: (203769, 167), edges: (234355, 2), classes: (203769, 2)
+Merging into single node table...
+  merged node table: (203769, 169)
+Building feature matrix X and edge index...
+  X: (203769, 166)  (expected (N, 166))
+  edge_index: (2, 234355)  (expected (2, E))
+Verifying label distribution...
+  illicit :    4545  (2.23%)
+  licit   :   42019  (20.62%)
+  unknown :  157205  (77.15%)
+Generating EDA plots...
+  peak illicit fraction at time step 13 (35.97%)
+Freezing train/val/test split...
+  train_mask: 136265 nodes
+  test_mask: 67504 nodes
+  pre_shutdown_mask: 37820 nodes
+  post_shutdown_mask: 29684 nodes
+Saving versioned data object -> outputs/elliptic_graph.npz

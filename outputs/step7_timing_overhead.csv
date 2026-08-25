@@ -1,0 +1,8 @@
+stage,ms_per_epoch,epochs_used,total_seconds
+baseline_supervised,508.3372790002614,200,101.66745580005228
+contrastive_pretrain_per_scope,5478.614745200321,400,2191.4458980801282
+contrastive_pretrain_total_all_scopes,,800,4382.8917961602565
+ssl_probe,216.45780999970157,200,43.29156199994031
+ssl_finetune,486.3637676011422,200,97.27275352022843
+inference_baseline_ms,187.1407568003633,,
+inference_ssl_ms,193.17549539991887,,

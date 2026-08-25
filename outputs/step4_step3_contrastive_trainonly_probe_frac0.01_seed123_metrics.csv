@@ -1,0 +1,4 @@
+split,illicit_precision,illicit_recall,illicit_f1,micro_f1,auc_pr,n_illicit_true
+test_35_49,0.2747,0.2853,0.2799,0.9046,0.2094,1083
+pre_shutdown_35_42,0.3547,0.3271,0.3404,0.8839,0.2945,914
+post_shutdown_43_49,0.0355,0.0592,0.0443,0.9355,0.0306,169
