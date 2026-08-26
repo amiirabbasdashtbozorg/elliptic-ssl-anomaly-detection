@@ -21,7 +21,6 @@ def main():
         return
 
     df = pd.read_csv(args.step5_csv)
-    # پیدا کردن تمام درصدهای موجود در فایل و مرتب کردن آن‌ها از بزرگ به کوچک
     fractions = sorted(df['frac'].unique(), reverse=True)
 
     os.makedirs(args.out_dir, exist_ok=True)
@@ -54,14 +53,14 @@ def main():
             print(f"{r['model']:25s} {r['pre_illicit_f1']:8.4f} {r['post_illicit_f1']:8.4f} "
                   f"{r['degradation_abs']:11.4f} {pct_str}")
 
-        # ذخیره جدول با نام مجزا برای هر درصد
+       
         csv_path = os.path.join(args.out_dir, f"step6_temporal_robustness_table_frac{frac}.csv")
         with open(csv_path, "w", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
             writer.writeheader()
             writer.writerows(rows)
 
-        # رسم نمودار میله‌ای
+       
         models = [r["model"] for r in rows]
         pre_vals = [r["pre_illicit_f1"] for r in rows]
         post_vals = [r["post_illicit_f1"] for r in rows]
@@ -81,7 +80,7 @@ def main():
         ax.grid(True, axis="y", alpha=0.3)
         fig.tight_layout()
 
-        # ذخیره عکس با نام مجزا برای هر درصد
+       
         plot_path = os.path.join(args.out_dir, f"step6_temporal_robustness_frac{frac}.png")
         fig.savefig(plot_path, dpi=150)
         plt.close(fig)

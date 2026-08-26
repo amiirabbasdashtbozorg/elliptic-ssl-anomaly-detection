@@ -251,3 +251,8 @@ if __name__ == "__main__":
     main()
 
 
+!python step7_comparison_viz_timing.py \
+  --graph /content/drive/MyDrive/EllipticProject/elliptic_graph.npz \
+  --checkpoint /content/drive/MyDrive/EllipticProject/step3_contrastive_trainonly.pt \
+  --step5_csv /content/drive/MyDrive/EllipticProject/outputs/step5_label_efficiency_results.csv \
+  --out_dir /content/drive/MyDrive/EllipticProject/outputs

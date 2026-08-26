@@ -25,8 +25,6 @@ def main():
     parser.add_argument("--seed", type=int, default=123)
     parser.add_argument("--epochs", type=int, default=200)
     parser.add_argument("--out_dir", default="outputs")
-
-    # آرگومان‌های جدید برای اکستنشن‌ها
     parser.add_argument("--teacher_ckpt", default=None, help="Add B1 extension arm if provided")
     parser.add_argument("--use_domain_adv", action="store_true", help="Add A2 extension arm if flag is used")
 
@@ -43,7 +41,6 @@ def main():
     step4_defaults.epochs = sweep_args.epochs
     step4_defaults.out_dir = sweep_args.out_dir
 
-    # تعریف مدل‌هایی که باید روی نمودار کشیده بشن (Arms)
     arms = [
         ("baseline", None, "finetune", {}),
         ("ssl_finetune", sweep_args.checkpoint, "finetune", {}),
