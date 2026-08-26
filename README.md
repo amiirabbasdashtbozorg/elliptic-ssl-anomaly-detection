@@ -31,5 +31,5 @@ An end-to-end framework leveraging **Graph Self-Supervised Learning (SSL)** to d
 ---
 
 ## 👥 Authors
-* **Amirabbas Dashtbozorg** - Department of Electrical Engineering, Sharif University of Technology[cite: 1]
+* **Amirabbas Dashtbozorg** - Department of Electrical Engineering, Sharif University of Technology
 * **Kianoush Kadkhodaie** - Department of Civil Engineering, Sharif University of Technology
